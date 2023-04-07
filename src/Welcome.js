@@ -12,7 +12,7 @@ export function Welcome() {
     <br/>
       <br/>
     <div style={{textAlign:"center",color:"blue"}}>
-      <Link to="/Register">Create  Account!</Link>
+      <Link to="/Register">Create  Account</Link>
       <br/>
       <br/>
      <Link to="/ForgetPassword">Forget Password?</Link>

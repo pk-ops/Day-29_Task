@@ -75,7 +75,7 @@ import {
     {errorMsg}
     </div>
     <div className="text-center" style={{color:"blue"}}>
-      <Link to="/Login">Login!</Link>
+      <Link to="/Login">Login</Link>
       <br/>
       <br/>
      <Link to="/ForgetPassword">Forget Password?</Link>
