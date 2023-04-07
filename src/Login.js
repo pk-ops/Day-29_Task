@@ -21,16 +21,20 @@ import {
     const [values,setValues]=useState({});
     const entry=()=>navigate("/Welcome");
   
-    
+    const submit=()=>{
+      alert("Login Successfull")
+      navigate("/welcome")
+    }
     
     return(
      <div className="add-user-container">
-    <form  
+    <form  onSubmit={submit}
   
     className="add-user-form" >
       <Typography variant="h4" pb={2}
     sx={{
       textAlign: 'center',
+      marginTop:"20px"
     }}>
      Login Details
     </Typography>

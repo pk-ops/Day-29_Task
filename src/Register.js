@@ -8,7 +8,7 @@ import {
   
   
   import TextField from '@mui/material/TextField'
-  import { useNavigate } from 'react-router-dom'
+  import { useNavigate, useParams } from 'react-router-dom'
   
   import { useState } from 'react';
   import {Link} from 'react-router-dom';
@@ -19,17 +19,26 @@ import {
     const navigate=useNavigate();
     const[errorMsg,setErrorMsg]=useState("");
     const login=()=>navigate("/Login");
-    const [values,setValues]=useState({})
+    const [values,setValues]=useState({
+    })
   
+
+    const onRegister=()=>{
+     
+    
+      alert("Registration Successful")
+        navigate("/login")
+    }
 
     return <div className="add-user-container">
            
-    <form  
+    <form  onSubmit={onRegister}
  
     className="add-user-form" >
       <Typography variant="h4" pb={2}
     sx={{
       textAlign: 'center',
+      marginTop:"30px",
     }}>
      Register User
     </Typography>

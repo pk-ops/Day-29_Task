@@ -7,12 +7,11 @@ import { ForgetPassword } from './ForgetPassword';
 import { ChangePassword } from './ChangePassword';
 import { Welcome } from './Welcome';
 import { PasswordUpdated } from './PasswordUpdated';
-
-
 function App() {
   return (
     <div className="App">
       <Routes>
+        
       <Route path="/Register" element={<Register/>}/>  
       <Route path="/Login" element={<Login/>}/>
       <Route path="/Welcome" element={<Welcome/>}/>
@@ -22,6 +21,7 @@ function App() {
       <Route path="/404-Page" element={<NotFound/>}/>
       <Route path="*" element={<Navigate replace to="/404-Page"/>}/>
       <Route path="/reset-password/:id/:token" element={<ChangePassword/>} />
+
       </Routes>
       
     </div>

@@ -26,6 +26,7 @@ import {
       <Typography variant="h4" pb={2}
     sx={{
       textAlign: 'center',
+      marginTop:"20px"
     }}>
      E-mail Details
     </Typography>

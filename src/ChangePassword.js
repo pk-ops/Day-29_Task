@@ -24,6 +24,7 @@ function SetNewPassword({id}){
     <Typography variant="h4" pb={2}
   sx={{
     textAlign: 'center',
+    marginTop:"20px"
   }}>
    Change Password
   </Typography>
